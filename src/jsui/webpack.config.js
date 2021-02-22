@@ -20,18 +20,6 @@ module.exports = {
         exclude: /node_modules/,
         use: ["svg-inline-loader"],
       },
-      {
-        test: /\.(png|jpeg|jpg|gif)$/,
-        use: [
-          {
-            loader: "url-loader",
-            options: {
-              limit: true,
-              esModule: false,
-            },
-          },
-        ],
-      },
     ],
   },
 };
